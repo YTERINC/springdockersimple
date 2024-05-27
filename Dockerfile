@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk17:alpine-jre
+FROM openjdk:17-oracle
 ARG JAR_FILE=target/spring-docker-simple-0.0.1-SNAPSHOT.jar
 WORKDIR /opt/app
 COPY ${JAR_FILE} app.jar
